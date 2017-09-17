@@ -13,10 +13,10 @@ public class GroupHolder  extends RecyclerView.ViewHolder  {
 
     public GroupHolder(View itemView) {
         super(itemView);
-        this.nameField = (TextView) itemView.findViewById(R.id.group_name);
+        nameField = (TextView) itemView.findViewById(R.id.group_name);
     }
 
-    public setName(String name) {
+    public void setName(String name) {
         nameField.setText(name);
     }
 

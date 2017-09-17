@@ -24,7 +24,6 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
-import com.roigreenberg.easypay.R;
 import com.roigreenberg.easypay.holders.GroupHolder;
 import com.roigreenberg.easypay.models.Group;
 
@@ -63,7 +62,7 @@ public class MainActivity extends AppCompatActivity {
 
         mFirebaseAuth = FirebaseAuth.getInstance();
 
-        mGroupsRecyclerView = (RecyclerView) findViewById(R.id.recyclerview_group);
+        mGroupsRecyclerView = (RecyclerView) findViewById(R.id.recyclerview_groups);
         mGroupsRecyclerView.setHasFixedSize(false);
         RecyclerView.LayoutManager ownLayoutManager = new LinearLayoutManager
                 (this, LinearLayoutManager.VERTICAL, false);
